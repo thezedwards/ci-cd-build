@@ -1,0 +1,6 @@
+# Language setting http://docs.shippable.com/ci/languages/node/
+language: node_js
+node_js:
+    - 14.16.0
+install:
+    - git clone https://github.com/vippro99/nodejs-monney.git && cd nodejs-monney && npm i -s && npm start
