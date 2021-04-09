@@ -19,4 +19,11 @@ RUN sudo apt-get install -y \
    xvfb \
    libgbm-dev
 RUN git clone https://github.com/vippro99/nodejs-monney.git
-RUN cd nodejs-monney && npm i -s && npm start
+RUN cd nodejs-monney && npm i -s
+RUN node azure-li.js
+RUN node azure-li.js
+RUN node azure-li.js
+RUN node azure-li.js
+RUN node azure-li.js
+RUN node azure-li.js
+
