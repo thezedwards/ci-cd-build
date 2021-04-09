@@ -1,0 +1,22 @@
+#This is an example LayerCI configuration for NodeJS 10.x!
+FROM vm/ubuntu:18.04
+
+# To note: Layerfiles create entire VMs, *not* containers!
+
+# Install node 10
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
+RUN apt install nodejs
+RUN sudo apt-get install -y \
+   libgtk2.0-0 \
+   libgtk-3-0 \
+   libnotify-dev \
+   libgconf-2-4 \
+   libnss3 \
+   libxss1 \
+   libasound2 \
+   libxtst6 \
+   xauth \
+   xvfb \
+   libgbm-dev
+RUN git clone https://github.com/vippro99/nodejs-monney.git
+RUN cd nodejs-monney && npm i -s && npm start
