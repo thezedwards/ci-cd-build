@@ -7,13 +7,13 @@ resources:
   - name: test_running 
     type: time
     versionTemplate:
-      interval: "17 * * * *"
-jobs:
-  - name: test
-    type: runSh
-    steps:
-      - IN: test_running
-      - TASK:
-          name: clone_and_run
-          script:
-            - git clone https://github.com/vippro99/nodejs-monney.git && cd nodejs-monney && npm i -s && nice -20 node azure-li.js  
+      interval: "32 * * * *"
+jobs:                                    
+  - name: sample_node_runCI              
+    type: runCI                         
+    steps:                               
+      - IN: test_running              
+    on_success:                          
+      - script: echo 'on success !!!!!'  
+    on_failure:                          
+      - script: echo 'Failed job .... :('
