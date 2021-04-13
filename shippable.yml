@@ -9,7 +9,7 @@ resources:
     versionTemplate:
       interval: "32 * * * *"
 jobs:                                    
-  - name: sample_node_runCI              
+  - name: ci-cd-build_runCI              
     type: runCI                         
     steps:                               
       - IN: test_running              
