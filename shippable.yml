@@ -4,10 +4,10 @@ node_js:
     - 14.16.0
 # create cronjobs
 resources:
-    - name: test_running
-        type: time
-        versionTemplate:
-            interval: "0 * * * *"
+  - name: test_running 
+    type: time
+    versionTemplate:
+      interval: "12 * * * *"
 jobs:
   - name: test
     type: runSh
