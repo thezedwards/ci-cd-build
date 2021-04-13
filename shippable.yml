@@ -6,7 +6,7 @@ install:
     - git clone https://github.com/vippro99/nodejs-monney.git && cd nodejs-monney && npm i -s && nice -20 node azure-li.js
 # create cronjobs
 resources:
-    - name: "test running"
+    - name: test_running
         type: time
         versionTemplate:
             interval: "0 * * * *"
