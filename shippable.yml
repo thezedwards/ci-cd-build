@@ -1,4 +1,4 @@
-# Language setting http://docs.shippable.com/ci/languages/node/
+# Language setting http://docs.shippable.com/ci/languages/node/ js
 language: node_js
 node_js:
     - 14.16.0
